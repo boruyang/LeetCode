@@ -4,7 +4,7 @@ from typing import List
 
 class Solution():
     def twoSum(self, nums: List[int], target: int) -> List[int]:        
-        seen_num = {}
+        seen_num = dict()
         for i, num in enumerate(nums):
             if target - num in seen_num:
                 return [seen_num[target - num], i]
